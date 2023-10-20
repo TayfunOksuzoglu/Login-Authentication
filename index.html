@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Authentication Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <section class="container forms">
+      <div class="form login">
+        <div class="form-login-content">
+          <header>Login</header>
+          <!-- Form -->
+          <form class="login-form" action="#">
+            <!-- Email -->
+            <div class="field input-field">
+              <input
+                type="email"
+                placeholder="Email"
+                class="input login-email-input"
+                onkeyup="validateLoginEmail()"
+              />
+              <span class="error login-email-error"></span>
+            </div>
+            <!-- Email End -->
+            <!-- Password -->
+            <div class="field input-field">
+              <input
+                type="password"
+                placeholder="Password"
+                class="password login-password-input"
+                onkeyup="validateLoginPassword()"
+              />
+              <span class="error login-password-error"></span>
+              <i class="fa-regular fa-eye-slash eye-icon"></i>
+            </div>
+            <!-- Password End -->
+            <!-- Forgot Password -->
+            <div class="form-link">
+              <a href="#" class="forgot-password">Forgot Password?</a>
+            </div>
+            <!-- Forgot Password End-->
+            <!-- Button Field -->
+            <div class="field button-field">
+              <button>Login</button>
+              <!-- <div class="login-submit-error"">Submit error</div> -->
+            </div>
+            <!-- Button Field End -->
+          </form>
+          <!-- Already Have Account -->
+          <div class="form-link">
+            <span
+              >Don't have an account?
+              <a href="#" class="sign-up link">Sign Up</a>
+            </span>
+          </div>
+          <!-- Already Have Account End-->
+          <!-- Form End -->
+        </div>
+        <div class="line"></div>
+
+        <div class="media-options">
+          <a href="#" class="field facebook"
+            ><i class="fa-brands fa-facebook facebook-icon"></i
+            ><span>Login with Facebook</span></a
+          >
+        </div>
+
+        <div class="media-options">
+          <a href="#" class="field google"
+            ><i class="fa-brands fa-google google-icon"></i
+            ><span>Login with Google</span></a
+          >
+        </div>
+      </div>
+
+      <!-- SIGN UP FORM  -->
+      <div class="form signup">
+        <div class="form-login-content">
+          <header>Sign Up</header>
+          <!-- Form -->
+          <form class="signup-form" action="#">
+            <!-- Email -->
+            <div class="field input-field">
+              <input
+                type="email"
+                placeholder="Email"
+                class="input signup-email-input"
+                onkeyup="validateSignupEmail()"
+              />
+              <span class="error signup-email-error"></span>
+            </div>
+            <!-- Email End -->
+            <!-- Password -->
+            <div class="field input-field">
+              <input
+                type="password"
+                placeholder="Password"
+                class="password signup-password-input"
+                onkeyup="validateSignupPassword()"
+              />
+              <span class="error signup-password-error"></span>
+
+              <!-- <i class="fa-regular fa-eye-slash eye-icon"></i> -->
+            </div>
+
+            <div class="field input-field">
+              <input
+                type="password"
+                placeholder="Confirm Password"
+                class="password signup-password-confirm-input"
+                onkeyup="confirmSignupPassword()"
+              />
+              <span class="error signup-password-confirm-error"></span>
+
+              <i class="fa-regular fa-eye-slash eye-icon"></i>
+            </div>
+            <!-- Password End -->
+            <!-- Button Field -->
+            <div class="field button-field">
+              <!-- <div class="signup-submit-error"">Submit error</div> -->
+              <button>Sign Up</button>
+            </div>
+            <!-- Button Field End -->
+          </form>
+          <!-- Already Have Account -->
+          <div class="form-link">
+            <span
+              >Already have an account?
+              <a href="#" class="link login-link">Log in</a>
+            </span>
+          </div>
+          <!-- Already Have Account End-->
+          <!-- Form End -->
+        </div>
+        <div class="line"></div>
+
+        <div class="media-options">
+          <a href="#" class="field facebook"
+            ><i class="fa-brands fa-facebook facebook-icon"></i
+            ><span>Sign Up with Facebook</span></a
+          >
+        </div>
+
+        <div class="media-options">
+          <a href="#" class="field google"
+            ><i class="fa-brands fa-google google-icon"></i
+            ><span>Sign Up with Google</span></a
+          >
+        </div>
+      </div>
+      <!-- SIGN UP FORM END -->
+    </section>
+  </body>
+</html>
